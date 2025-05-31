@@ -26,8 +26,8 @@ public:
     vector<unsigned int> gIndexBuffer; // Vertex indices for the triangles.
 
     vector<vec3> gVertexBuffer; // Vertex location for the triangles.
-    vector<vec3> gNormalBuffer; // Vertex location for the triangles.
-    vector<vec3> gColorBuffer; // Vertex location for the triangles.
+	vector<vec3> gNormalBuffer; // Vertex normals for the triangles.
+	vector<vec3> gColorBuffer; // Vertex colors for the triangles.
 
     vec3 Ka, Kd, Ks;
     int p;
