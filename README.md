@@ -14,7 +14,8 @@ get cam, mat, light and calc PhongShading
 
 In sphere_scnene, change type of variables and refactor codes.
 add gNormalBuffer and gColorBuffer variable.
-![image](https://github.com/user-attachments/assets/ebabc22a-e473-4f64-9a93-2024558bf7a7)
+![image](https://github.com/user-attachments/assets/92e0db25-aa97-49a3-972f-9801b77206ec)
+
 
 
 
