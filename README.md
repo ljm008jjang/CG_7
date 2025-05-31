@@ -12,7 +12,9 @@ Phong.frag shader code.
 get cam, mat, light and calc PhongShading
 ![image](https://github.com/user-attachments/assets/0561e1f3-4a40-491f-9fad-ff720ea19cc4)
 
-
+In sphere_scnene, change type of variables and refactor codes.
+add gNormalBuffer and gColorBuffer variable.
+![image](https://github.com/user-attachments/assets/ebabc22a-e473-4f64-9a93-2024558bf7a7)
 
 
 
