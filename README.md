@@ -1,15 +1,18 @@
 Compilation:
-Q1.Implement Flat shading in function rasterize_triangle
-Set color by triangle
-![image](https://github.com/user-attachments/assets/412d01ef-24a5-4093-af89-0f6d5875db3f)
+Set View, Model, Projection Matrix.
+Set Unifrom values to Shader
+![image](https://github.com/user-attachments/assets/f4429928-f568-484b-bd7a-a90f156c1aef)
 
-Q2.Implement Gouraud shading 
-Set color by vertex using interpolate
-![image](https://github.com/user-attachments/assets/1b531b5d-5e18-4597-aa1d-b492fc0e3637)
+Phong.vert shader code
+get model, view, projection matrix and set result position
+![image](https://github.com/user-attachments/assets/8d5bee8d-6f7a-4de4-bfb6-229e3c55552d)
 
-Q3.Implement Phong shading 
-Set color by pixel
-![image](https://github.com/user-attachments/assets/691c5b58-43d1-4fc6-bbac-bc736c7aac5d)
+
+Phong.frag shader code.
+get cam, mat, light and calc PhongShading
+![image](https://github.com/user-attachments/assets/0561e1f3-4a40-491f-9fad-ff720ea19cc4)
+
+
 
 
 
@@ -21,7 +24,7 @@ Download files and run OpenglViewer.sln
 
 ![image](https://github.com/user-attachments/assets/00a6fa01-53a9-4d9e-a088-0ffd1c6aa84d)
 
-Select Project(Q1, Q2, Q3) and right-click and click "Set as Startup Projcect"
+Select Project(Q1) and right-click and click "Set as Startup Projcect"
 
 ![image](https://github.com/user-attachments/assets/33ae5757-9c17-438e-8d94-8ddd6d7cddf7)
 
@@ -37,14 +40,9 @@ I don't know why, but if you failed then change target platform to Win32
 Result Picture:
 result picture included in root folder
 
-Q1
-![image](https://github.com/user-attachments/assets/d7f8abaa-d6b3-44d4-bb35-ae43e9ef8cc6)
+![image](https://github.com/user-attachments/assets/ba1299e5-dc4a-4772-8494-9457cb3a488d)
 
-Q2
-![image](https://github.com/user-attachments/assets/6d7b3d49-704a-4d4e-aee3-fbe5a4b92c76)
 
-Q3
-![image](https://github.com/user-attachments/assets/51bbc8fb-76f5-45a4-85fb-97029ef57fb6)
 
 
 
