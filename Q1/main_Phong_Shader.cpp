@@ -146,20 +146,23 @@ void Update_mesh(const GLuint& VAO, const vector<GLuint>& GLBuffers, vector<vec3
 	glBindVertexArray(0);
 }
 
+//helped by ChatGPT
 void setUniformVec3(GLuint program, const std::string& name, const glm::vec3& value) {
 	GLint loc = glGetUniformLocation(program, name.c_str());
 	glUniform3fv(loc, 1, glm::value_ptr(value));
 }
-
+//helped by ChatGPT
 void setUniformFloat(GLuint program, const std::string& name, float value) {
 	GLint loc = glGetUniformLocation(program, name.c_str());
 	glUniform1f(loc, value);
 }
+//helped by ChatGPT
 void setUniformMat4(GLuint program, const std::string& name, const glm::mat4& mat) {
 	GLint loc = glGetUniformLocation(program, name.c_str());
 	glUniformMatrix4fv(loc, 1, GL_FALSE, glm::value_ptr(mat));
 }
 
+//helped by ChatGPT
 void render(GLuint shaderProgram, GLuint VAO, size_t indexCount)
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -183,6 +186,7 @@ void render(GLuint shaderProgram, GLuint VAO, size_t indexCount)
 	setUniformVec3(shaderProgram, "ka", vec3(0.0f, 1.0f, 0.0f));
 	setUniformVec3(shaderProgram, "kd", vec3(0.0f, 0.5f, 0.0f));
 	setUniformVec3(shaderProgram, "ks", vec3(0.5f));
+	setUniformFloat(shaderProgram, "gamma", 2.2f);
 	setUniformFloat(shaderProgram, "shininess", 32.0f);
 	setUniformFloat(shaderProgram, "Ia", 0.2f);
 	setUniformVec3(shaderProgram, "lightColor", vec3(1.0f));
@@ -262,6 +266,10 @@ int main(int argc, char* argv[])
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}
+
+
+	glfwDestroyWindow(window);
+	glfwTerminate();
 
 	return 0;
 }
